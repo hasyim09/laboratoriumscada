@@ -1,0 +1,213 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Tombol Kontak di Header */
+#open-contact-modal {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Pop-up Kontak di Header */
+.modal-header {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tombol Penutup Pop-up Kontak */
+.close-modal-header {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Responsif untuk Header */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Menu tumpuk di perangkat berukuran kecil */
+    text-align: center; /* Tengahkan menu di perangkat berukuran kecil */
+  }
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* Features section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+/* Menetapkan lebar eksplisit untuk fitur pada layar kecil */
+.feature {
+  flex-basis: calc(33.33% - 20px);
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsif untuk Features section */
+@media screen and (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Mengatur lebar yang sama pada layar */
+  .feature {
+    flex-basis: calc(100% - 20px); 
+  }
+}
+
+.feature img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.feature h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+}
+
+/* Gallery section */
+.gallery {
+  text-align: center;
+  padding: 50px;
+}
+
+.gallery h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.image-container img {
+  margin-right: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.page {
+  width: 80%;
+  margin: 0 auto 10px auto;
+}
+
+/* Tombol Kontak */
+button#open-contact-modal {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
